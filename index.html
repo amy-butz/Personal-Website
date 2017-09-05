@@ -4,6 +4,8 @@
     <title>Amy Butz, CoderGirl</title>
     <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" name="viewport">
    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/theme.css" media="screen" />
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Abel">
     <style>
@@ -15,15 +17,33 @@
 
   <body>
 
+    <div class=”box”>
+<div id=”contactFormContainer”>
+                <div id=”contactForm”>
+                    <fieldset>
+                        <label for=”Name”>Name *</label>
+                        <input id=”name” type=”text” />
+                        <label for=”Email”>Email address *</label>
+                        <input id=”Email” type=”text” />
+                        <label for=”Message”>Your message *</label>
+                        <textarea id=”Message” rows=”3″ cols=”20″></textarea>
+                        <input id=”sendMail” type=”submit” name=”submit” onclick=”closeForm()” />
+                        <span id=”messageSent”>Your message has been sent successfully!</span>
+                   </fieldset>
+                </div>
+            </div>
+              </div>
+
     <div class="header">
       <h1>Amy Butz</h1>
       <h2>Front End Web Developer</h2>
+      <span id="info">amymariebutz@gmail.com</span>
     </div>
 
     <main>
 
        <div id="pic">
-        <img src="./assets/images/amy_pic.jpg" alt="Headshot of Amy" class="thumbnail">
+        <img class="circle" src="./assets/images/amy_pic.jpg" alt="Headshot of Amy" class="thumbnail">
       </div>
 
       <div id="bio">
