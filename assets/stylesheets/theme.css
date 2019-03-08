@@ -6,17 +6,17 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #BE93C5; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #dedede;
     font-family: Abel, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
 h1 {
-    color: #000000;
-    font-size: 2.5rem;
+    color: #5cd1b4;
+    font-family: Sedgwick Ave, cursive;
+    font-weight: lighter;
+    font-size: 3rem;
     text-align: center;
     margin: 0;
 }
@@ -29,81 +29,51 @@ h2 {
 }
 
 main {
-    margin: 20px;
-    padding: 10px;
+    padding: 50px 120px 50px 120px;
     display: flex;
     flex-direction: column;
-}
-
-.circle {
-    border-radius: 50%;
-    width: 200px;
-    display: block;
-    margin: auto;
 }
 
 .italic {
     font-style: italic;
 }
 
-#pic {
-    padding: 0;
-}
-
-#info {
-    padding: 0;
-    margin-right: 20px;
-    background-color: #ffffff;
-    opacity: 0.7;
-    padding: 10px;
-}
-
-#bio {
+.card {
     margin-top: 20px;
-    background-color: #ffffff;
-    opacity: 0.7;
-    padding: 10px;
+    margin-bottom: 40px;
+    background-color: #fdfdfd;
+    padding: 20px;
     font-size: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 a {
-    color: #609c9f;
+    color: #4daf97;
 }
 
 a:hover {
-    color: #B648A9;
+    color: #675ad0;
 }
 
 p {
-    color: #609c9f;
+    color: #000000;
+    margin: 0 15px;
 }
 
 ul {
-    color: #609c9f;
+    color: #000000;
     overflow: hidden;
 }
 
 .header {
-    background-color: #ffffff;
-    opacity: 0.7;
+    background-color: #fdfdfd;
     padding: 15px;
     margin: 0;
-}
-
-.content {
-    background-color: #ffffff;
-    color: #45a8a3;
-    display: flex;
-    padding: 15px;
-}
-
-.thumbnail {
-    width: 200px;
-    margin: 0px 0px 0px 20px;
-}
-
-p {
-    margin: 0 15px;
 }
 
 footer {
@@ -115,20 +85,4 @@ footer {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-
-    main {
-        flex-direction: row;
-    }
-
-    #bio {
-        margin: 0;
-    }
-
-    #pic {
-        margin-right: 20px;
-    }
-
 }
