@@ -100,6 +100,9 @@ ul {
 .thumbnail {
     width: 200px;
     margin: 0px 0px 0px 20px;
+    background-color: #030303;
+    color: #eeeeee;
+    padding: 15px;
 }
 
 p {
